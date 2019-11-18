@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyReportJasper2</title>
+    <style>
+    .content {
+      padding: 100px 0;
+      border: 3px solid red;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <form action="{% url 'generate' %}" method="post" class="content">
+    {% csrf_token %}
+
+
+     <button type="submit" name='mybtn2'>Generate report results in PDF</button>
+     </form>
+</body>
+</html>
